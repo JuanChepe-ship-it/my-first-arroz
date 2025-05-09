@@ -4,43 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Receta: Arroz con leche - Postre Tradicional</title>
-  <link rel="stylesheet" href="/src/static/styles/index.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="/src/static/img/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/src/static/styles/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
       <h1>Arroz con Leche</h1>
       <p class="subtitle">Un postre tradicional con el sabor de la abuela</p>
     </div>
   </header>
   
-  <div class="container">
-    <section class="card">
+  <div class="container main-content">
+    <div class="recipe-image">
+      <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=1000&auto=format&fit=crop" alt="Arroz con leche en un tazón decorado con canela">
+    </div>
+    
+    <section class="card recipe-card">
       <div class="recipe-info">
         <div class="info-item">
-          <i>⏱️</i>
+          <div class="info-icon">⏱️</div>
           <p>Tiempo</p>
           <strong>40 minutos</strong>
         </div>
         <div class="info-item">
-          <i>👨‍🍳</i>
+          <div class="info-icon">👨‍🍳</div>
           <p>Dificultad</p>
           <strong>Fácil</strong>
         </div>
         <div class="info-item">
-          <i>🍽️</i>
+          <div class="info-icon">🍽️</div>
           <p>Porciones</p>
           <strong>6 personas</strong>
         </div>
         <div class="info-item">
-          <i>🔥</i>
+          <div class="info-icon">🔥</div>
           <p>Calorías</p>
           <strong>220 kcal/porción</strong>
         </div>
       </div>
       
-      <p>El arroz con leche es un postre tradicional en muchos países de habla hispana, con variaciones en cada región. Esta receta te ofrece un arroz con leche cremoso, aromático y con el toque justo de dulzor. Perfecto para cualquier ocasión, desde una merienda familiar hasta un postre para invitados especiales.</p>
+      <p class="recipe-intro">El arroz con leche es un postre tradicional en muchos países de habla hispana, con variaciones en cada región. Esta receta te ofrece un arroz con leche cremoso, aromático y con el toque justo de dulzor. Perfecto para cualquier ocasión, desde una merienda familiar hasta un postre para invitados especiales.</p>
       
       <div class="tabs">
         <button class="tab active" data-tab="ingredients">Ingredientes</button>
@@ -51,7 +59,7 @@
       
       <div id="ingredients" class="tab-content active">
         <h2>Ingredientes:</h2>
-        <ul>
+        <ul class="ingredients-list">
           <li class="ingredient-item">
             <input type="checkbox" id="ing1">
             <label for="ing1">1 taza de arroz (preferiblemente de grano corto)</label>
@@ -97,7 +105,7 @@
       
       <div id="preparation" class="tab-content">
         <h2>Preparación:</h2>
-        <ol>
+        <ol class="preparation-steps">
           <li>Lava bien el arroz bajo agua fría para eliminar el exceso de almidón. Escúrrelo completamente.</li>
           <li>En una olla grande, vierte el agua y lleva a ebullición. Añade la rama de canela y el arroz.</li>
           <li>Cocina a fuego medio hasta que el arroz absorba casi toda el agua (aproximadamente 10 minutos).</li>
@@ -114,173 +122,230 @@
       <div id="tips" class="tab-content">
         <h2>Consejos y trucos:</h2>
         
-        <div class="tip">
-          <strong>Tip #1:</strong> Para un arroz con leche más cremoso, utiliza una mezcla de leche entera y leche evaporada.
+        <div class="tips-container">
+          <div class="tip">
+            <div class="tip-number">1</div>
+            <div class="tip-content">
+              <strong>Para un arroz con leche más cremoso</strong>, utiliza una mezcla de leche entera y leche evaporada.
+            </div>
+          </div>
+          
+          <div class="tip">
+            <div class="tip-number">2</div>
+            <div class="tip-content">
+              <strong>Remover constantemente</strong> es la clave para evitar que se pegue y para lograr una textura perfecta.
+            </div>
+          </div>
+          
+          <div class="tip">
+            <div class="tip-number">3</div>
+            <div class="tip-content">
+              <strong>Si prefieres un arroz con leche más ligero</strong>, puedes usar leche desnatada, aunque la textura será menos cremosa.
+            </div>
+          </div>
+          
+          <div class="tip">
+            <div class="tip-number">4</div>
+            <div class="tip-content">
+              <strong>La ralladura de limón o naranja</strong> añade un toque refrescante que contrasta con la dulzura del postre.
+            </div>
+          </div>
+          
+          <div class="tip">
+            <div class="tip-number">5</div>
+            <div class="tip-content">
+              <strong>Si lo vas a servir frío</strong>, prepáralo un poco más líquido ya que espesará en la nevera.
+            </div>
+          </div>
         </div>
         
-        <div class="tip">
-          <strong>Tip #2:</strong> Remover constantemente es la clave para evitar que se pegue y para lograr una textura perfecta.
+        <div class="conservation">
+          <h3>Conservación:</h3>
+          <p>El arroz con leche se puede conservar en la nevera hasta 3-4 días en un recipiente hermético. No se recomienda congelarlo, ya que al descongelarlo puede perder su textura cremosa.</p>
         </div>
-        
-        <div class="tip">
-          <strong>Tip #3:</strong> Si prefieres un arroz con leche más ligero, puedes usar leche desnatada, aunque la textura será menos cremosa.
-        </div>
-        
-        <div class="tip">
-          <strong>Tip #4:</strong> La ralladura de limón o naranja añade un toque refrescante que contrasta con la dulzura del postre.
-        </div>
-        
-        <div class="tip">
-          <strong>Tip #5:</strong> Si lo vas a servir frío, prepáralo un poco más líquido ya que espesará en la nevera.
-        </div>
-        
-        <h3>Conservación:</h3>
-        <p>El arroz con leche se puede conservar en la nevera hasta 3-4 días en un recipiente hermético. No se recomienda congelarlo, ya que al descongelarlo puede perder su textura cremosa.</p>
       </div>
       
       <div id="variations" class="tab-content">
         <h2>Variaciones regionales:</h2>
         
-        <div class="variation-item">
-          <h3>Arroz con leche español</h3>
-          <p>Se caracteriza por añadir cáscara de limón durante la cocción y decorarlo con canela en polvo dibujando formas.</p>
+        <div class="variations-container">
+          <div class="variation-item">
+            <h3>Arroz con leche español</h3>
+            <p>Se caracteriza por añadir cáscara de limón durante la cocción y decorarlo con canela en polvo dibujando formas.</p>
+          </div>
+          
+          <div class="variation-item">
+            <h3>Arroz con leche mexicano</h3>
+            <p>Suele incluir canela, clavo y a veces pasas. Frecuentemente se aromatiza con vainilla.</p>
+          </div>
+          
+          <div class="variation-item">
+            <h3>Arroz con leche colombiano</h3>
+            <p>La versión colombiana se sirve a menudo con queso rallado por encima, creando un delicioso contraste dulce-salado.</p>
+          </div>
+          
+          <div class="variation-item">
+            <h3>Arroz con leche peruano</h3>
+            <p>Se distingue por incluir leche evaporada y condensada, además de especias como clavo y canela.</p>
+          </div>
         </div>
         
-        <div class="variation-item">
-          <h3>Arroz con leche mexicano</h3>
-          <p>Suele incluir canela, clavo y a veces pasas. Frecuentemente se aromatiza con vainilla.</p>
+        <div class="modern-adaptations">
+          <h3>Adaptaciones modernas:</h3>
+          <ul>
+            <li><strong>Arroz con leche vegano:</strong> Sustituye la leche animal por leche de coco o almendras.</li>
+            <li><strong>Arroz con leche de chocolate:</strong> Añade cacao en polvo o chocolate negro derretido.</li>
+            <li><strong>Arroz con leche de frutas:</strong> Incorpora trozos de manzana, pera o frutas rojas.</li>
+          </ul>
         </div>
-        
-        <div class="variation-item">
-          <h3>Arroz con leche colombiano</h3>
-          <p>La versión colombiana se sirve a menudo con queso rallado por encima, creando un delicioso contraste dulce-salado.</p>
-        </div>
-        
-        <div class="variation-item">
-          <h3>Arroz con leche peruano</h3>
-          <p>Se distingue por incluir leche evaporada y condensada, además de especias como clavo y canela.</p>
-        </div>
-        
-        <h3>Adaptaciones modernas:</h3>
-        <ul>
-          <li><strong>Arroz con leche vegano:</strong> Sustituye la leche animal por leche de coco o almendras.</li>
-          <li><strong>Arroz con leche de chocolate:</strong> Añade cacao en polvo o chocolate negro derretido.</li>
-          <li><strong>Arroz con leche de frutas:</strong> Incorpora trozos de manzana, pera o frutas rojas.</li>
-        </ul>
       </div>
     </section>
     
-    <section class="card">
-      <h2>Información nutricional</h2>
-      <p>Valores aproximados por porción (150g):</p>
+    <div class="two-column">
+      <section class="card nutrition-card">
+        <h2>Información nutricional</h2>
+        <p>Valores aproximados por porción (150g):</p>
+        
+        <table class="nutrition-facts">
+          <thead>
+            <tr>
+              <th>Nutriente</th>
+              <th>Cantidad</th>
+              <th>% Valor Diario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Calorías</td>
+              <td>220 kcal</td>
+              <td>11%</td>
+            </tr>
+            <tr>
+              <td>Carbohidratos</td>
+              <td>40g</td>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <td>Proteínas</td>
+              <td>5g</td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <td>Grasas</td>
+              <td>4g</td>
+              <td>6%</td>
+            </tr>
+            <tr>
+              <td>Azúcares</td>
+              <td>25g</td>
+              <td>25%</td>
+            </tr>
+            <tr>
+              <td>Calcio</td>
+              <td>150mg</td>
+              <td>15%</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p class="nutrition-note"><em>Los valores pueden variar según los ingredientes específicos utilizados.</em></p>
+      </section>
       
-      <table class="nutrition-facts">
-        <tr>
-          <th>Nutriente</th>
-          <th>Cantidad</th>
-          <th>% Valor Diario</th>
-        </tr>
-        <tr>
-          <td>Calorías</td>
-          <td>220 kcal</td>
-          <td>11%</td>
-        </tr>
-        <tr>
-          <td>Carbohidratos</td>
-          <td>40g</td>
-          <td>15%</td>
-        </tr>
-        <tr>
-          <td>Proteínas</td>
-          <td>5g</td>
-          <td>10%</td>
-        </tr>
-        <tr>
-          <td>Grasas</td>
-          <td>4g</td>
-          <td>6%</td>
-        </tr>
-        <tr>
-          <td>Azúcares</td>
-          <td>25g</td>
-          <td>25%</td>
-        </tr>
-        <tr>
-          <td>Calcio</td>
-          <td>150mg</td>
-          <td>15%</td>
-        </tr>
-      </table>
-      
-      <p><em>Los valores pueden variar según los ingredientes específicos utilizados.</em></p>
-    </section>
+      <section class="card history-card">
+        <h2>Historia del arroz con leche</h2>
+        <p>El arroz con leche tiene sus orígenes en Asia, donde el arroz se cultivaba desde hace miles de años. Se cree que llegó a Europa a través de los árabes durante su presencia en la Península Ibérica.</p>
+        
+        <p>Desde España, este postre se extendió a América Latina durante la colonización, donde cada país lo adaptó según sus costumbres y productos locales, creando múltiples variaciones que hoy conocemos.</p>
+        
+        <p>A pesar de sus diferentes versiones, el arroz con leche se ha convertido en un postre universal, símbolo de la cocina casera y tradicional en muchos países.</p>
+      </section>
+    </div>
     
-    <section class="card">
-      <h2>Historia del arroz con leche</h2>
-      <p>El arroz con leche tiene sus orígenes en Asia, donde el arroz se cultivaba desde hace miles de años. Se cree que llegó a Europa a través de los árabes durante su presencia en la Península Ibérica.</p>
-      
-      <p>Desde España, este postre se extendió a América Latina durante la colonización, donde cada país lo adaptó según sus costumbres y productos locales, creando múltiples variaciones que hoy conocemos.</p>
-      
-      <p>A pesar de sus diferentes versiones, el arroz con leche se ha convertido en un postre universal, símbolo de la cocina casera y tradicional en muchos países.</p>
-    </section>
-    
-    <section class="rating">
+    <section class="card rating-card">
       <h2>¿Te ha gustado esta receta?</h2>
-      <div class="stars">
-        <span class="star" data-rating="1">★</span>
-        <span class="star" data-rating="2">★</span>
-        <span class="star" data-rating="3">★</span>
-        <span class="star" data-rating="4">★</span>
-        <span class="star" data-rating="5">★</span>
+      <div class="stars-container">
+        <div class="stars">
+          <span class="star" data-rating="1">★</span>
+          <span class="star" data-rating="2">★</span>
+          <span class="star" data-rating="3">★</span>
+          <span class="star" data-rating="4">★</span>
+          <span class="star" data-rating="5">★</span>
+        </div>
+        <p id="rating-text">Califica esta receta</p>
       </div>
-      <p id="rating-text">Califica esta receta</p>
       
-      <button class="btn print-btn">
-        <span>🖨️</span> Imprimir receta
-      </button>
-      
-      <div class="share-buttons">
-        <div class="share-btn">📱</div>
-        <div class="share-btn">📧</div>
-        <div class="share-btn">📘</div>
+      <div class="action-buttons">
+        <button class="btn print-btn">
+          <span>🖨️</span> Imprimir receta
+        </button>
+        
+        <div class="share-buttons">
+          <button class="share-btn" title="Compartir en WhatsApp">
+            <span>📱</span>
+          </button>
+          <button class="share-btn" title="Compartir por correo">
+            <span>📧</span>
+          </button>
+          <button class="share-btn" title="Compartir en Facebook">
+            <span>📘</span>
+          </button>
+        </div>
       </div>
     </section>
     
-    <section class="comments">
+    <section class="card comments-card">
       <h2>Comentarios (3)</h2>
       
-      <div class="comment">
-        <div class="comment-author">María García</div>
-        <div class="comment-date">15 abril, 2025</div>
-        <p>¡Delicioso! Lo preparé para mi familia y les encantó. Añadí un poco de ralladura de naranja como sugeriste y quedó espectacular.</p>
-      </div>
-      
-      <div class="comment">
-        <div class="comment-author">Juan Pérez</div>
-        <div class="comment-date">10 abril, 2025</div>
-        <p>Muy buena receta, aunque yo prefiero añadir pasas. Mi abuela siempre lo hacía así y me trae buenos recuerdos.</p>
-      </div>
-      
-      <div class="comment">
-        <div class="comment-author">Ana Martínez</div>
-        <div class="comment-date">5 abril, 2025</div>
-        <p>Probé la variación con leche de coco por intolerancia a la lactosa y quedó muy bien. ¡Gracias por incluir alternativas!</p>
+      <div class="comments-container">
+        <div class="comment">
+          <div class="comment-header">
+            <div class="comment-author">María García</div>
+            <div class="comment-date">15 abril, 2025</div>
+          </div>
+          <p>¡Delicioso! Lo preparé para mi familia y les encantó. Añadí un poco de ralladura de naranja como sugeriste y quedó espectacular.</p>
+        </div>
+        
+        <div class="comment">
+          <div class="comment-header">
+            <div class="comment-author">Juan Pérez</div>
+            <div class="comment-date">10 abril, 2025</div>
+          </div>
+          <p>Muy buena receta, aunque yo prefiero añadir pasas. Mi abuela siempre lo hacía así y me trae buenos recuerdos.</p>
+        </div>
+        
+        <div class="comment">
+          <div class="comment-header">
+            <div class="comment-author">Ana Martínez</div>
+            <div class="comment-date">5 abril, 2025</div>
+          </div>
+          <p>Probé la variación con leche de coco por intolerancia a la lactosa y quedó muy bien. ¡Gracias por incluir alternativas!</p>
+        </div>
       </div>
       
       <div class="comment-form">
         <h3>Deja tu comentario</h3>
-        <textarea placeholder="Escribe tu comentario..."></textarea>
-        <button class="btn">Enviar comentario</button>
+        <textarea id="new-comment" placeholder="Escribe tu comentario..."></textarea>
+        <button class="btn submit-comment">Enviar comentario</button>
       </div>
     </section>
   </div>
   
   <footer>
     <div class="container">
-      <p>© 2025 Recetas Tradicionales</p>
-      <p>Comparte tu versión del arroz con leche usando #RecetasTradicionales</p>
+      <div class="footer-content">
+        <div class="footer-logo">Recetas Tradicionales</div>
+        <div class="footer-info">
+          <p>© 2025 Recetas Tradicionales</p>
+          <p>Comparte tu versión del arroz con leche usando #RecetasTradicionales</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/tentacion_arrozconlechebca/" class="social-link" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/FAIBER.ARIAS.MEJIA" class="social-link" target="_blank">Facebook</a>
+        </div>
+      </div>
     </div>
   </footer>
+  
   <script src="/src/static/js/index.js"></script>
 </body>
 </html>
