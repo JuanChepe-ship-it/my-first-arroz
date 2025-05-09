@@ -1,4 +1,4 @@
-# Receta incluida
+# Receta incluida con Juan José
 
 Arroz con leche
 Ingredientes:
