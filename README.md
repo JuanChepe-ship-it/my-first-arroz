@@ -1,4 +1,4 @@
-# Receta incluida
+# Receta incluida con Jhonatan, misma receta con la original
 
 Arroz con leche
 Ingredientes:
